@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rehansamnani.github.io/MR.ALEENN/sitemap.xml 
