@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="images/ma-logo-gold.webp">
+    <link rel="icon" type="image/png" href="images/ma-logo-gold.png">
+    <link rel="apple-touch-icon" href="images/ma-logo-gold.png">
     <!-- SEO Meta Tags -->
     <meta name="description" content="MR.ALEENN - Professional Marketing & Social Media Growth Services. Expert social media management, content creation, and brand growth strategies.">
     <meta name="keywords" content="MR.ALEENN, marketing, social media growth, digital marketing, content creation, brand growth, social media management">
     <meta name="author" content="MR.ALEENN">
     
+    <!-- Section-specific meta descriptions -->
+    <meta name="description" property="og:description" content="Transform your brand's social media presence with MR.ALEENN's expert marketing solutions. From content creation to brand growth, we deliver results.">
+    <meta name="description" property="section:about" content="Leading digital marketing agency specializing in social media growth and brand development with years of proven success.">
+    <meta name="description" property="section:services" content="Comprehensive social media solutions including content creation, targeted advertising, and social media management.">
+    <meta name="description" property="section:pricing" content="Flexible pricing packages tailored for startups to established brands, starting from ₹35,000.">
+    
     <!-- Open Graph Meta Tags for Social Media -->
     <meta property="og:title" content="MR.ALEENN - Marketing & Social Media Growth">
-    <meta property="og:description" content="Transform your brand's reach with our expert marketing solutions—strategies that elevate your local impact to global success!">
     <meta property="og:image" content="images/ma-logo-gold.png">
     <meta property="og:url" content="https://rehansamnani.github.io/MR.ALEENN/">
     
@@ -20,8 +29,56 @@
     <meta name="twitter:description" content="Transform your brand's reach with our expert marketing solutions—strategies that elevate your local impact to global success!">
     <meta name="twitter:image" content="images/ma-logo-gold.png">
     
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "MR.ALEENN",
+        "image": "images/ma-logo-gold.png",
+        "description": "Professional Marketing & Social Media Growth Services",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "IN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates"
+        },
+        "url": "https://rehansamnani.github.io/MR.ALEENN/",
+        "telephone": "+91 8369608742",
+        "priceRange": "₹₹₹",
+        "openingHours": "Mo-Su",
+        "sameAs": [
+            "https://instagram.com/mr.aleenn?igshid=YmMyMTA2M2Y="
+        ],
+        "offers": [
+            {
+                "@type": "Offer",
+                "name": "Silver Package",
+                "price": "35000",
+                "priceCurrency": "INR",
+                "description": "12 Set of Reels, 6 Carousel Posts, Basic Analytics, Weekly Reports"
+            },
+            {
+                "@type": "Offer",
+                "name": "Golden Package",
+                "price": "45000",
+                "priceCurrency": "INR",
+                "description": "18 Set of Reels, 8 Premium Posts, Advanced Analytics, Bi-weekly Reports"
+            },
+            {
+                "@type": "Offer",
+                "name": "Diamond Package",
+                "price": "55000",
+                "priceCurrency": "INR",
+                "description": "24 Set of Reels, 12 Premium Posts, Premium Analytics, Daily Reports"
+            }
+        ]
+    }
+    </script>
+    
     <title>MR.ALEENN - Marketing & Social Media Growth</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=1.0.1">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -30,7 +87,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-logo">
-            <img src="images/ma-logo-gold.png" alt="MR.ALEENN Logo" class="nav-logo-img">
+            <img src="images/ma-logo-gold.png" alt="MR.ALEENN Logo" class="nav-logo-img" loading="lazy" aria-label="Company Logo">
         </div>
         <div class="nav-links">
             <a href="#home" class="active">Home</a>
@@ -161,9 +218,9 @@
             <p>Expert tips and strategies for digital success</p>
         </div>
         <div class="blog-grid">
-            <article class="blog-card">
+            <article class="blog-card" data-post-id="social-media-strategy">
                 <div class="blog-image">
-                    <img src="images/social-media-strategy.jpg" alt="Social Media Strategy">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQ1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjAyMDIwIi8+PC9zdmc+" alt="Social Media Strategy" loading="lazy">
                 </div>
                 <div class="blog-content">
                     <h3>Mastering Social Media in 2024</h3>
@@ -175,9 +232,9 @@
                     <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </article>
-            <article class="blog-card">
+            <article class="blog-card" data-post-id="content-creation">
                 <div class="blog-image">
-                    <img src="images/content-creation.jpg" alt="Content Creation">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQ1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjAyMDIwIi8+PC9zdmc+" alt="Content Creation" loading="lazy">
                 </div>
                 <div class="blog-content">
                     <h3>Content Creation That Converts</h3>
@@ -189,9 +246,9 @@
                     <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </article>
-            <article class="blog-card">
+            <article class="blog-card" data-post-id="brand-growth">
                 <div class="blog-image">
-                    <img src="images/brand-growth.jpg" alt="Brand Growth">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQ1MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjAyMDIwIi8+PC9zdmc+" alt="Brand Growth" loading="lazy">
                 </div>
                 <div class="blog-content">
                     <h3>Building a Strong Brand Identity</h3>
@@ -337,7 +394,7 @@
                     </div>
                 </div>
                 <div class="social-links">
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://instagram.com/mr.aleenn?igshid=YmMyMTA2M2Y=" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
                     <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
                     <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
                     <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
@@ -375,7 +432,7 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="images/ma-logo-gold.png" alt="MR.ALEENN Logo" class="footer-logo-img">
+                <img src="images/ma-logo-gold.png" alt="MR.ALEENN Logo" class="footer-logo-img" loading="lazy" aria-label="Company Logo Footer">
                 <h3>MR.ALEENN</h3>
             </div>
             <div class="footer-links">
@@ -406,5 +463,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="script.js"></script>
+    
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 </body>
 </html> 

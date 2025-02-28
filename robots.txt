@@ -1,3 +1,18 @@
 User-agent: *
 Allow: /
-Sitemap: https://rehansamnani.github.io/MR.ALEENN/sitemap.xml 
+Sitemap: https://rehansamnani.github.io/MR.ALEENN/sitemap.xml
+
+# Allow all bots to access all content
+# Optimize crawling by specifying important pages
+Allow: /index.html
+Allow: /#about
+Allow: /#services
+Allow: /#pricing
+Allow: /#contact
+
+# Prevent crawling of any temporary or development files
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.txt$
+Disallow: /temp/
+Disallow: /dev/ 
