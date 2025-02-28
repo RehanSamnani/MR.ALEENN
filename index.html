@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR.ALEENN - Marketing & Social Media Growth</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="images/ma-logo-gold.png" alt="MR.ALEENN Logo" class="nav-logo-img">
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-cta">
+            <a href="#contact" class="nav-button">Get Started</a>
+        </div>
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="mobile-cta">Get Started</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>MR.ALEENN</h1>
+            <h2>MARKETING & SOCIAL MEDIA GROWTH</h2>
+            <p class="hero-tagline">"Transform your brand's reach with our expert marketing solutions—strategies that elevate your local impact to global success!"</p>
+            <div class="hero-cta">
+                <a href="#pricing" class="cta-primary">View Packages</a>
+                <a href="#contact" class="cta-secondary">Contact Us</a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-card">
+                <i class="fas fa-trophy"></i>
+                <h3>500+</h3>
+                <p>Successful Campaigns</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-users"></i>
+                <h3>548729</h3>
+                <p>Audience Reached</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>200+</h3>
+                <p>Brands Grown</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-header">
+            <h2>Our Services</h2>
+            <p>Comprehensive social media solutions for your brand's success</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <h3>Content Creation</h3>
+                <p>Stunning visuals & compelling copy that captivate your audience</p>
+                <ul class="service-features">
+                    <li>Custom Graphics Design</li>
+                    <li>Video Production</li>
+                    <li>Copywriting</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎯</div>
+                <h3>Targeted Advertising</h3>
+                <p>Precision-driven ad campaigns for maximum ROI</p>
+                <ul class="service-features">
+                    <li>Audience Analysis</li>
+                    <li>A/B Testing</li>
+                    <li>Performance Tracking</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💼</div>
+                <h3>Social Media Management</h3>
+                <p>Consistent branding & engagement across platforms</p>
+                <ul class="service-features">
+                    <li>Content Calendar</li>
+                    <li>Community Management</li>
+                    <li>Crisis Management</li>
+                </ul>
+            </div>
+        </div>
+        <div class="chart-container">
+            <canvas id="platformChart"></canvas>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="section-header">
+            <h2>Choose Your Package</h2>
+            <p>Tailored solutions for every stage of your growth</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card silver">
+                <div class="card-header">
+                    <h3>Silver Package</h3>
+                    <div class="price">₹35,000/-</div>
+                    <p>Perfect for startups and small businesses</p>
+                </div>
+                <div class="card-features">
+                    <h4>Package Includes:</h4>
+                    <ul>
+                        <li>12 Set of Reels</li>
+                        <li>6 Carousel Posts</li>
+                        <li>Basic Analytics</li>
+                        <li>Weekly Reports</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="card-cta">Get Started</a>
+            </div>
+            <div class="pricing-card gold">
+                <div class="popular-tag">Most Popular</div>
+                <div class="card-header">
+                    <h3>Golden Package</h3>
+                    <div class="price">₹45,000/-</div>
+                    <p>Ideal for growing businesses</p>
+                </div>
+                <div class="card-features">
+                    <h4>Package Includes:</h4>
+                    <ul>
+                        <li>18 Set of Reels</li>
+                        <li>8 Premium Posts</li>
+                        <li>Advanced Analytics</li>
+                        <li>Bi-weekly Reports</li>
+                        <li>Priority Support</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="card-cta">Get Started</a>
+            </div>
+            <div class="pricing-card diamond">
+                <div class="card-header">
+                    <h3>Diamond Package</h3>
+                    <div class="price">₹55,000/-</div>
+                    <p>For established brands seeking excellence</p>
+                </div>
+                <div class="card-features">
+                    <h4>Package Includes:</h4>
+                    <ul>
+                        <li>24 Set of Reels</li>
+                        <li>12 Premium Posts</li>
+                        <li>Premium Analytics</li>
+                        <li>Daily Reports</li>
+                        <li>24/7 Priority Support</li>
+                        <li>Strategy Consulting</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="card-cta">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+            <p>Ready to take your social media presence to the next level?</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Call Us</h3>
+                        <p>+91 8369608742</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email Us</h3>
+                        <p>MARKETING.MRALEENN@GMAIL.COM</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <select id="package" name="package" required>
+                        <option value="">Select Package</option>
+                        <option value="silver">Silver Package</option>
+                        <option value="gold">Golden Package</option>
+                        <option value="diamond">Diamond Package</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn" id="submitBtn">
+                    <span class="btn-text">Send Message</span>
+                    <span class="loading-spinner" style="display: none;">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/ma-logo-gold.png" alt="MR.ALEENN Logo" class="footer-logo-img">
+                <h3>MR.ALEENN</h3>
+            </div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#pricing">Pricing</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <a href="#services">Content Creation</a>
+                    <a href="#services">Social Media Management</a>
+                    <a href="#services">Growth Strategy</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>+91 8369608742</p>
+                    <p>MARKETING.MRALEENN@GMAIL.COM</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MR.ALEENN. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
